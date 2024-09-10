@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Tutorial Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header>
+    <h1>Frontend Express</h1>
+</header>
+
+<div id="login-container">
+    <h2>Login</h2>
+    <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <button type="submit">Login</button>
+        <p id="login-message"></p>
+    </form>
+</div>
+
+<div id="content-container" style="display:none;">
+    <div id="timer" style="text-align:left; margin-top: 20px; font-size: 20px;">
+        <h3>Welcome</h3>
+        <span id="time-spent">00:00:00</span>
+    </div>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#html">HTML Basics</a>
+        <a href="#css">CSS Basics</a>
+        <a href="#javascript">JavaScript Basics</a>
+        <a href="#advanced">Advanced Topics</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#" id="logout-btn">Logout</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the ultimate guide for learning frontend development. This website is designed to help you master the fundamentals of web development, starting from HTML, CSS, and JavaScript to more advanced topics.</p>
+    </section>
+
+    <section id="html">
+        <h2>HTML Basics</h2>
+        <p>HTML (HyperText Markup Language) is the foundation of all web pages. It defines the structure of a web page using elements like headings, paragraphs, links, and images.</p>
+        <h3>1. Elements and Tags</h3>
+        <p>HTML uses elements and tags to structure content. Elements are defined by tags, which include an opening tag, content, and a closing tag. For example, <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code> defines a paragraph element.</p>
+        <h3>2. Attributes</h3>
+        <p>Attributes provide additional information about HTML elements. They are included in the opening tag and are written as name-value pairs. For instance, <code>&lt;a href="https://example.com"&gt;Example&lt;/a&gt;</code> uses the href attribute to define the link target.</p>
+        <h3>3. Forms</h3>
+        <p>Forms are used to collect user input. They include various elements like text fields, checkboxes, radio buttons, and submit buttons. The <code>&lt;form&gt;</code> element wraps these input elements and submits the data to a server.</p>
+    </section>
+
+    <section id="css">
+        <h2>CSS Basics</h2>
+        <p>CSS (Cascading Style Sheets) is used to style HTML content. It controls the layout, colors, fonts, and overall appearance of web pages.</p>
+        <h3>1. Selectors</h3>
+        <p>CSS selectors are patterns used to select the elements you want to style. Common selectors include element selectors (e.g., <code>p</code>), class selectors (e.g., <code>.class-name</code>), and ID selectors (e.g., <code>#id-name</code>).</p>
+        <h3>2. Properties</h3>
+        <p>CSS properties define the style to be applied to selected elements. Common properties include <code>color</code>, <code>font-size</code>, <code>margin</code>, and <code>padding</code>. For example, <code>p { color: blue; }</code> sets the text color of all paragraphs to blue.</p>
+        <h3>3. Responsive Design</h3>
+        <p>Responsive design ensures that web pages look good on all devices by using fluid grids, flexible images, and media queries. Media queries allow you to apply different styles based on the screen size or device characteristics.</p>
+    </section>
+
+    <section id="javascript">
+        <h2>JavaScript Basics</h2>
+        <p>JavaScript is a programming language that makes web pages interactive. It can be used to create dynamic content, handle events, and interact with web APIs.</p>
+        <h3>1. DOM Manipulation</h3>
+        <p>The DOM (Document Object Model) represents the structure of an HTML document. JavaScript can be used to manipulate the DOM by selecting elements, modifying their content, and changing their attributes. For example, <code>document.getElementById('myElement').innerHTML = 'New Content';</code> changes the content of an element with the ID <code>myElement</code>.</p>
+        <h3>2. Events</h3>
+        <p>Events are actions that occur in the browser, such as clicks, form submissions, and key presses. JavaScript can be used to listen for and handle these events using event listeners. For example, <code>button.addEventListener('click', function() { alert('Button clicked!'); });</code> sets up a click event handler for a button element.</p>
+        <h3>3. APIs</h3>
+        <p>APIs (Application Programming Interfaces) allow JavaScript to interact with external services and resources. The Fetch API and XMLHttpRequest are commonly used to make HTTP requests and handle responses.</p>
+    </section>
+
+    <section id="advanced">
+        <h2>Advanced Web Development</h2>
+        <p>Once you've mastered HTML, CSS, and JavaScript, you can explore more advanced topics to enhance your skills.</p>
+        <h3>1. Responsive Design</h3>
+        <p>Responsive design involves creating web layouts that adapt to different screen sizes and devices. This can be achieved using flexible grids, fluid images, and media queries. Techniques such as mobile-first design ensure that websites are optimized for mobile users.</p>
+        <h3>2. Web Performance Optimization</h3>
+        <p>Optimizing web performance involves techniques to improve the loading speed and responsiveness of a website. This includes minimizing CSS and JavaScript files, optimizing images, and using caching strategies.</p>
+        <h3>3. Security Best Practices</h3>
+        <p>Web security is crucial to protect user data and maintain the integrity of web applications. Best practices include implementing HTTPS, securing user authentication, and protecting against common vulnerabilities like XSS (Cross-Site Scripting) and CSRF (Cross-Site Request Forgery).</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>We offer a variety of services to help you advance your frontend development skills, including:</p>
+        <h3>1. One-on-One Tutoring</h3>
+        <p>Personalized tutoring sessions to address your specific learning needs and goals. Our experts will guide you through complex concepts and help you improve your coding skills.</p>
+        <h3>2. Coding Workshops</h3>
+        <p>Interactive workshops covering various frontend development topics. Learn through hands-on exercises and real-world projects.</p>
+        <h3>3. Project Review and Feedback</h3>
+        <p>Get professional feedback on your projects, including code reviews and suggestions for improvement. Enhance your projects with expert advice.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="contact-info">You can also reach us at: <a href="mailto:info@frontendexpress.com">info@frontendtutorial.com</a></p>
+    </section>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
